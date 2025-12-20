@@ -5,9 +5,13 @@ return {
   },
   config = function()
     vim.lsp.enable({
-      'lua_ls',
-      'clangd',
       'bashls',
+      'clangd',
+      'html',
+      'emmet_language_server',
+      'cssls',
+      'ts_ls',
+      'omnisharp',
     })
   end,
 }

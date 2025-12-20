@@ -27,6 +27,7 @@ opt.number = true
 opt.relativenumber = true
 opt.cursorline = true
 opt.termguicolors = true
+opt.scrolloff = 4
 
 -- Buffers and windows
 opt.equalalways = false

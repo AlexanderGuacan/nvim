@@ -9,7 +9,6 @@ return {
     },
     sections = {
       lualine_c = { { 'filename', path = 1, file_status = true, }, },
-      lualine_y = { 'lsp_status' },
     },
   },
   config = function(_, opts)
