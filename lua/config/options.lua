@@ -2,7 +2,6 @@ local opt = vim.opt
 local diagnostic = vim.diagnostic.config
 
 -- Text indentation
-opt.breakindent = true
 opt.autoindent = true
 opt.smartindent = true
 opt.expandtab = true
@@ -11,16 +10,17 @@ opt.shiftwidth = 2
 opt.softtabstop = 2
 opt.tabstop = 2
 opt.wrap = true
+opt.breakindent = true
+opt.linebreak = true
 
 -- Search
 opt.incsearch = true
 opt.hlsearch = true
 opt.ignorecase = true
 opt.smartcase = true
-opt.fileignorecase = true
-opt.wildignorecase = true
 opt.wildmenu = true
 opt.wildmode = 'longest:full,full'
+opt.wildignorecase = true
 
 -- UI
 opt.number = true

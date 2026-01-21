@@ -12,6 +12,7 @@ return {
       'cssls',
       'ts_ls',
       'omnisharp',
+      'texlab',
     })
   end,
 }

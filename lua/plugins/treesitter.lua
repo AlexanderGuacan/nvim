@@ -1,6 +1,5 @@
 return {
   "nvim-treesitter/nvim-treesitter",
-  branch = "master",
   lazy = false,
   build = ":TSUpdate",
   dependencies = {
@@ -10,9 +9,22 @@ return {
     ensure_installed = {
       "lua",
       "luadoc",
+      "bash",
+      "c",
+      "cpp",
+      "c_sharp",
+      "css",
+      "gitignore",
+      "html",
+      "javascript",
+      "json",
+      "markdown",
+      "typescript",
+      "vim",
+      "vimdoc",
     },
     sync_install = false,
-    auto_install = true,
+    auto_install = false,
     highlight = {
       enable = true,
       additional_vim_regex_highlighting = false,

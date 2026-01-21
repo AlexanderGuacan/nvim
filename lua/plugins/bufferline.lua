@@ -14,7 +14,4 @@ return {
       show_tab_indicators = false,
     }
   },
-  keys = {
-    { '<leader>bs', '<cmd>BufferLinePick<cr>', silent = true, desc = "Pick buffer" },
-  },
 }
