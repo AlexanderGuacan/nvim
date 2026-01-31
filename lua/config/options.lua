@@ -43,7 +43,5 @@ opt.foldlevelstart = 99
 -- Extras
 opt.confirm = true
 opt.path:append('**')
-diagnostic({
-  virtual_text = true,
-})
+diagnostic({virtual_text = true})
 
