@@ -19,7 +19,7 @@ opt.hlsearch = true
 opt.ignorecase = true
 opt.smartcase = true
 opt.wildmenu = true
-opt.wildmode = 'longest:full,full'
+opt.wildmode = "longest:full,full"
 opt.wildignorecase = true
 
 -- UI
@@ -42,6 +42,8 @@ opt.foldlevelstart = 99
 
 -- Extras
 opt.confirm = true
-opt.path:append('**')
-diagnostic({virtual_text = true})
-
+diagnostic({
+	virtual_text = true,
+	float = { border = "rounded", source = "always" },
+	severity_sort = true,
+})
