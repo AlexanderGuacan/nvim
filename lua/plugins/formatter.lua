@@ -6,10 +6,6 @@ return {
         formatters_by_ft = {
             bash = {"beautysh"},
             cpp = {"clang-format"},
-            html = {"prettier"},
-            javascript = {"prettier"},
-            css = {"prettier"},
-            cs = {"csharpier"},
             tex = {"latexindent"},
             lua = {"lua-format"}
         },

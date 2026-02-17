@@ -2,9 +2,6 @@ return {
     'neovim/nvim-lspconfig',
     dependencies = {'mason-org/mason.nvim'},
     config = function()
-        vim.lsp.enable({
-            'bashls', 'clangd', 'html', 'emmet_language_server', 'cssls',
-            'ts_ls', 'omnisharp', 'texlab', 'lua_lsp'
-        })
+        vim.lsp.enable({'bashls', 'clangd', 'texlab', 'lua_lsp'})
     end
 }
