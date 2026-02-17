@@ -3,7 +3,10 @@ return {
 	dependencies = { "nvim-tree/nvim-web-devicons" },
 	opts = {
 		options = { globalstatus = true },
-		sections = { lualine_c = { { "filename", path = 1, file_status = true } } },
+		sections = {
+			lualine_c = { { "filename", path = 1, file_status = true } },
+			lualine_y = { "lsp_status" },
+		},
 	},
 	config = function(_, opts)
 		vim.opt.showmode = false
