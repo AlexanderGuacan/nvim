@@ -42,8 +42,12 @@ opt.foldlevelstart = 99
 
 -- Extras
 opt.confirm = true
+opt.path:append("**")
 diagnostic({
 	virtual_text = true,
-	float = { border = "rounded", source = "always" },
+	float = {
+		border = "rounded",
+		source = "always",
+	},
 	severity_sort = true,
 })

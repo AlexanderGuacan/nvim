@@ -1,13 +1,32 @@
 local picker = {
 	enabled = true,
-	sources = { explorer = { layout = { layout = { position = "right" } } } },
+	sources = {
+		explorer = {
+			layout = {
+				layout = {
+					position = "right",
+				},
+			},
+		},
+	},
 }
 
-local notifier = { enabled = true, top_down = false }
+local notifier = {
+	enabled = true,
+	top_down = false,
+}
+
+local statuscolumn = {
+	enabled = true,
+	folds = { open = true },
+}
 
 return {
 	"folke/snacks.nvim",
-	dependencies = { "nvim-tree/nvim-web-devicons", "lewis6991/gitsigns.nvim" },
+	dependencies = {
+		"nvim-tree/nvim-web-devicons",
+		"lewis6991/gitsigns.nvim",
+	},
 	priority = 1000,
 	lazy = false,
 	opts = {
@@ -17,7 +36,7 @@ return {
 		input = { enabled = true },
 		notifier = notifier,
 		picker = picker,
-		statuscolumn = { enabled = true },
+		statuscolumn = statuscolumn,
 		words = { enabled = true },
 		-- bigfile = { enabled = true },
 		-- quickfile = { enabled = true },
