@@ -1,7 +1,10 @@
 return {
 	"mason-org/mason-lspconfig.nvim",
 	dependencies = {
-		"mason-org/mason.nvim",
+		{
+			"mason-org/mason.nvim",
+			opts = {},
+		},
 		"neovim/nvim-lspconfig",
 	},
 	opts = {
@@ -9,9 +12,8 @@ return {
 		ensure_installed = {
 			"bashls",
 			"clangd",
-			"neocmake",
-			"jdtls",
 			"lua_ls",
+			"neocmake",
 			"pyright",
 			"texlab",
 		},

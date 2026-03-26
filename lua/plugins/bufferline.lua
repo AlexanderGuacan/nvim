@@ -14,4 +14,13 @@ return {
 			show_tab_indicators = false,
 		},
 	},
+	keys = {
+		{
+			"<leader>bD",
+			function()
+				vim.cmd([[BufferLineCloseOthers]])
+			end,
+			desc = "Close another buffer lines",
+		},
+	},
 }
