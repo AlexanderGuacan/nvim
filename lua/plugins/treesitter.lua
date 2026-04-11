@@ -8,10 +8,12 @@ return {
 			"c",
 			"cmake",
 			"cpp",
-			"java",
+			"html",
+			"javascript",
 			"latex",
 			"lua",
 			"python",
+			"typescript",
 		})
 	end,
 }
