@@ -14,6 +14,9 @@ return {
 			"lua",
 			"python",
 			"typescript",
+			"json",
+			"jsx",
+			"tsx",
 		})
 	end,
 }

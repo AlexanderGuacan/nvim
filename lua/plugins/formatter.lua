@@ -15,6 +15,7 @@ return {
 			javascriptreact = { "prettier" },
 			typescript = { "prettier" },
 			typescriptreact = { "prettier" },
+			json = { "prettier" },
 		},
 		default_format_opts = { lsp_format = "fallback" },
 		format_on_save = { timeout_ms = 500 },
