@@ -60,11 +60,11 @@ return {
 			desc = "File Explorer",
 		},
 		{
-			"<leader>q",
+			"<leader>/",
 			function()
-				Snacks.picker.qflist()
+				Snacks.picker.grep()
 			end,
-			desc = "Quickfix List",
+			desc = "Grep",
 		},
 
 		-- Search
@@ -89,6 +89,20 @@ return {
 			end,
 			desc = "Keymaps",
 		},
+		{
+			"<leader>sq",
+			function()
+				Snacks.picker.qflist()
+			end,
+			desc = "Quickfix List",
+		},
+		{
+			"<leader>sr",
+			function()
+				Snacks.picker.registers()
+			end,
+			desc = "Registers",
+		},
 
 		-- Find
 		{
@@ -104,13 +118,6 @@ return {
 				Snacks.picker.files({ cwd = vim.fn.stdpath("config") })
 			end,
 			desc = "Find Config Files",
-		},
-		{
-			"<leader>fg",
-			function()
-				Snacks.picker.grep()
-			end,
-			desc = "Grep",
 		},
 		{
 			"<leader>fb",
@@ -195,6 +202,27 @@ return {
 		},
 
 		-- Others
+		{
+			"q:",
+			function()
+				Snacks.picker.command_history()
+			end,
+			desc = "Command History",
+		},
+		{
+			"q/",
+			function()
+				Snacks.picker.search_history()
+			end,
+			desc = "Search History",
+		},
+		{
+			"q?",
+			function()
+				Snacks.picker.search_history()
+			end,
+			desc = "Search History",
+		},
 		{
 			"<c-/>",
 			function()
