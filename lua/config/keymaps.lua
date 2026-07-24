@@ -1,7 +1,7 @@
 local map = vim.keymap.set
 
-map("n", "<C-d>", "<C-d>M", { desc = "Jump half page down and place cursor in the middle" })
-map("n", "<C-u>", "<C-u>M", { desc = "Jump half page up and place cursor in the middle" })
+map("n", "<C-d>", "M<C-d>", { desc = "Jump half page down and place cursor in the middle" })
+map("n", "<C-u>", "M<C-u>", { desc = "Jump half page up and place cursor in the middle" })
 
 map("n", "n", "nzz", { desc = "Repeat last search in forward direction and keep cursor in the middle" })
 map("n", "N", "Nzz", { desc = "Repeat last search in backward direction and keep cursor in the middle" })

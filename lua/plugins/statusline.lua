@@ -4,13 +4,28 @@ return {
 		"nvim-tree/nvim-web-devicons",
 	},
 	opts = {
-		options = { globalstatus = true },
 		sections = {
+			lualine_b = {
+				"branch",
+				"diff",
+			},
 			lualine_c = {
 				{ "filename", path = 1, file_status = true },
 			},
-			lualine_y = {
-				"lsp_status",
+			lualine_x = {
+				"diagnostics",
+				"filetype",
+			},
+			lualine_y = {},
+			lualine_z = {},
+		},
+		inactive_sections = {
+			lualine_c = {
+				{ "filename", path = 1, file_status = true },
+			},
+			lualine_x = {
+				"diagnostics",
+				"filetype",
 			},
 		},
 	},
