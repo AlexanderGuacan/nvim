@@ -18,8 +18,7 @@ return {
 			"lua_ls",
 			"neocmake",
 			"pyright",
-			"texlab",
-			"ts_ls",
+			"vtsls",
 		},
 	},
 }

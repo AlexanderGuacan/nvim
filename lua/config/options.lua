@@ -1,5 +1,5 @@
 local opt = vim.opt
-local diagnostic = vim.diagnostic.config
+local diagnostic = vim.diagnostic
 
 -- Text indentation
 opt.autoindent = true
@@ -28,6 +28,23 @@ opt.relativenumber = true
 opt.cursorline = true
 opt.termguicolors = true
 opt.scrolloff = 4
+opt.signcolumn = "yes"
+diagnostic.config({
+	virtual_text = true,
+	underline = true,
+	signs = {
+		text = {
+			[diagnostic.severity.ERROR] = "",
+			[diagnostic.severity.WARN] = "",
+			[diagnostic.severity.INFO] = "",
+			[diagnostic.severity.HINT] = "",
+		},
+	},
+	float = {
+		border = "rounded",
+		source = "if_many",
+	},
+})
 
 -- Buffers and windows
 opt.equalalways = false
@@ -43,11 +60,3 @@ opt.foldlevelstart = 99
 -- Extras
 opt.confirm = true
 opt.path:append("**")
-diagnostic({
-	virtual_text = true,
-	float = {
-		border = "rounded",
-		source = "always",
-	},
-	severity_sort = true,
-})

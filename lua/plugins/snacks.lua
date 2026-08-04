@@ -66,22 +66,15 @@ return {
 			end,
 			desc = "Grep",
 		},
+		{
+			"<leader>?",
+			function()
+				Snacks.picker.grep()
+			end,
+			desc = "Grep",
+		},
 
 		-- Search
-		{
-			"<leader>sd",
-			function()
-				Snacks.picker.diagnostics_buffer()
-			end,
-			desc = "Buffer Diagnostics",
-		},
-		{
-			"<leader>sD",
-			function()
-				Snacks.picker.diagnostics()
-			end,
-			desc = "Diagnostics",
-		},
 		{
 			"<leader>sk",
 			function()
@@ -90,18 +83,25 @@ return {
 			desc = "Keymaps",
 		},
 		{
-			"<leader>sq",
-			function()
-				Snacks.picker.qflist()
-			end,
-			desc = "Quickfix List",
-		},
-		{
 			"<leader>sr",
 			function()
 				Snacks.picker.registers()
 			end,
 			desc = "Registers",
+		},
+		{
+			"<leader>sc",
+			function()
+				Snacks.picker.commands()
+			end,
+			desc = "Commands",
+		},
+		{
+			"<leader>sh",
+			function()
+				Snacks.picker.help()
+			end,
+			desc = "Help pages",
 		},
 
 		-- Find
@@ -110,14 +110,14 @@ return {
 			function()
 				Snacks.picker.files()
 			end,
-			desc = "Find Files",
+			desc = "Files",
 		},
 		{
 			"<leader>fc",
 			function()
 				Snacks.picker.files({ cwd = vim.fn.stdpath("config") })
 			end,
-			desc = "Find Config Files",
+			desc = "Config Files",
 		},
 		{
 			"<leader>fb",
@@ -125,6 +125,27 @@ return {
 				Snacks.picker.buffers()
 			end,
 			desc = "Buffers",
+		},
+		{
+			"<leader>fd",
+			function()
+				Snacks.picker.diagnostics_buffer()
+			end,
+			desc = "Buffer Diagnostics",
+		},
+		{
+			"<leader>fD",
+			function()
+				Snacks.picker.diagnostics()
+			end,
+			desc = "Diagnostics",
+		},
+		{
+			"<leader>fq",
+			function()
+				Snacks.picker.qflist()
+			end,
+			desc = "Quickfix list",
 		},
 
 		-- LSP
@@ -200,6 +221,13 @@ return {
 			end,
 			desc = "Git Diff (Hunks)",
 		},
+		{
+			"<leader>gh",
+			function()
+				vim.cmd([[Gitsigns preview_hunk]])
+			end,
+			desc = "Git Diff (Preview Hunk)",
+		},
 
 		-- Others
 		{
@@ -222,22 +250,6 @@ return {
 				Snacks.picker.search_history()
 			end,
 			desc = "Search History",
-		},
-		{
-			"<c-/>",
-			function()
-				Snacks.terminal()
-			end,
-			mode = { "n", "t" },
-			desc = "Toggle Terminal",
-		},
-		{
-			"<c-_>",
-			function()
-				Snacks.terminal()
-			end,
-			mode = { "n", "t" },
-			desc = "which_key_ignore",
 		},
 	},
 }

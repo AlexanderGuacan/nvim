@@ -10,6 +10,7 @@ return {
 				javascript = { "template_string" },
 				java = false,
 			},
+			fast_wrap = {},
 		},
 	},
 

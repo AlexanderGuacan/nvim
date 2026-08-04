@@ -9,14 +9,13 @@ return {
 			"cmake",
 			"cpp",
 			"html",
-			"javascript",
-			"latex",
-			"lua",
-			"python",
-			"typescript",
 			"json",
 			"jsx",
+			"lua",
+			"python",
 			"tsx",
+			"typescript",
+			"javascript",
 		})
 	end,
 }
