@@ -7,6 +7,7 @@ return {
 			bash = { "beautysh" },
 			cmake = { "cmake_format" },
 			cpp = { "clang-format" },
+			css = { "prettier" },
 			html = { "prettier" },
 			javascript = { "prettier" },
 			javascriptreact = { "prettier" },
