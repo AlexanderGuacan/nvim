@@ -18,7 +18,8 @@ return {
 			"lua_ls",
 			"neocmake",
 			"pyright",
-			"vtsls",
+			"tailwindcss",
+			"ts_ls",
 		},
 	},
 }
