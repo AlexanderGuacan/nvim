@@ -18,7 +18,9 @@ local notifier = {
 
 local statuscolumn = {
 	enabled = true,
-	folds = { open = true },
+	folds = {
+		open = true,
+	},
 }
 
 return {
@@ -38,10 +40,6 @@ return {
 		picker = picker,
 		statuscolumn = statuscolumn,
 		words = { enabled = true },
-		-- bigfile = { enabled = true },
-		-- quickfile = { enabled = true },
-		-- scope = { enabled = true },
-		-- scroll = { enabled = true },
 	},
 	keys = {
 		-- Top Pickers & Explorer
@@ -220,13 +218,6 @@ return {
 				Snacks.picker.git_diff()
 			end,
 			desc = "Git Diff (Hunks)",
-		},
-		{
-			"<leader>gh",
-			function()
-				vim.cmd([[Gitsigns preview_hunk]])
-			end,
-			desc = "Git Diff (Preview Hunk)",
 		},
 
 		-- Others
