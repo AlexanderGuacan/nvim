@@ -1,5 +1,6 @@
 local opt = vim.opt
 local diagnostic = vim.diagnostic
+local document_color = vim.lsp.document_color
 
 -- Text indentation
 opt.autoindent = true
@@ -44,6 +45,9 @@ diagnostic.config({
 		border = "rounded",
 		source = "if_many",
 	},
+})
+document_color.enable(true, nil, {
+	style = "virtual",
 })
 
 -- Buffers and windows
