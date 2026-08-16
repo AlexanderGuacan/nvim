@@ -13,15 +13,13 @@ map("n", "K", function()
 	})
 end, { desc = "Display hover information about the symbol under the cursor in a floating window" })
 
-map("i", "<C-k>", function()
+map("i", "<C-s>", function()
 	vim.lsp.buf.signature_help({
 		border = "rounded",
 		max_width = 80,
 	})
 end, { desc = "Display signature information about the symbol under the cursor in a floating window" })
 
-map("n", "gb", ":bnext<CR>", { silent = true, desc = "Go to next buffer" })
-map("n", "gB", ":bprevious<CR>", { silent = true, desc = "Go to previous buffer" })
 map("n", "<leader>bd", ":bd<CR>", { silent = true, desc = "Delete buffer" })
 
 map("n", "<M-j>", ":m +1<CR>==", { silent = true, desc = "Move line down" })
@@ -30,6 +28,6 @@ map("v", "<M-j>", ":m '>+1<CR>gv=gv", { silent = true, desc = "Move selectioned 
 map("v", "<M-k>", ":m '<-2<CR>gv=gv", { silent = true, desc = "Move selectioned lines up" })
 
 map("n", "<leader>e", ":Explore<CR>", { silent = true, desc = "Open file explorer" })
-map("n", "<leader>sk", ":registers<CR>", { silent = true, desc = "Open registers list" })
-map("n", "<leader>sq", ":copen<CR>", { silent = true, desc = "Open quickfix list" })
 map("n", "<leader>fb", ":ls<CR>", { silent = true, desc = "Open buffers list" })
+map("n", "<leader>sr", ":registers<CR>", { silent = true, desc = "Open registers list" })
+map("n", "<leader>sq", ":copen<CR>", { silent = true, desc = "Open quickfix list" })
