@@ -58,6 +58,13 @@ return {
 			desc = "File Explorer",
 		},
 		{
+			"<leader>q",
+			function()
+				Snacks.picker.qflist()
+			end,
+			desc = "Quickfix list",
+		},
+		{
 			"<leader>/",
 			function()
 				Snacks.picker.grep()
@@ -101,6 +108,20 @@ return {
 			end,
 			desc = "Help pages",
 		},
+		{
+			"<leader>sd",
+			function()
+				Snacks.picker.diagnostics_buffer()
+			end,
+			desc = "Buffer Diagnostics",
+		},
+		{
+			"<leader>sD",
+			function()
+				Snacks.picker.diagnostics()
+			end,
+			desc = "Diagnostics",
+		},
 
 		-- Find
 		{
@@ -123,27 +144,6 @@ return {
 				Snacks.picker.buffers()
 			end,
 			desc = "Buffers",
-		},
-		{
-			"<leader>fd",
-			function()
-				Snacks.picker.diagnostics_buffer()
-			end,
-			desc = "Buffer Diagnostics",
-		},
-		{
-			"<leader>fD",
-			function()
-				Snacks.picker.diagnostics()
-			end,
-			desc = "Diagnostics",
-		},
-		{
-			"<leader>fq",
-			function()
-				Snacks.picker.qflist()
-			end,
-			desc = "Quickfix list",
 		},
 
 		-- LSP
@@ -222,6 +222,13 @@ return {
 
 		-- Others
 		{
+			"<leader>bd",
+			function()
+				Snacks.bufdelete()
+			end,
+			desc = "Delete Buffer",
+		},
+		{
 			"q:",
 			function()
 				Snacks.picker.command_history()
@@ -241,6 +248,22 @@ return {
 				Snacks.picker.search_history()
 			end,
 			desc = "Search History",
+		},
+		{
+			"]]",
+			function()
+				Snacks.words.jump(vim.v.count1)
+			end,
+			desc = "Next Reference",
+			mode = { "n", "t" },
+		},
+		{
+			"[[",
+			function()
+				Snacks.words.jump(-vim.v.count1)
+			end,
+			desc = "Prev Reference",
+			mode = { "n", "t" },
 		},
 	},
 }

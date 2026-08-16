@@ -28,6 +28,6 @@ map("v", "<M-j>", ":m '>+1<CR>gv=gv", { silent = true, desc = "Move selectioned 
 map("v", "<M-k>", ":m '<-2<CR>gv=gv", { silent = true, desc = "Move selectioned lines up" })
 
 map("n", "<leader>e", ":Explore<CR>", { silent = true, desc = "Open file explorer" })
+map("n", "<leader>q", ":copen<CR>", { silent = true, desc = "Open quickfix list" })
 map("n", "<leader>fb", ":ls<CR>", { silent = true, desc = "Open buffers list" })
 map("n", "<leader>sr", ":registers<CR>", { silent = true, desc = "Open registers list" })
-map("n", "<leader>sq", ":copen<CR>", { silent = true, desc = "Open quickfix list" })
