@@ -11,6 +11,17 @@ return {
 				local icon = level:match("error") and "" or (level:match("warning") and "" or "")
 				return icon
 			end,
+			custom_filter = function(buf)
+				local forbidden_buftypes = { "terminal" }
+
+				for _, buftype in ipairs(forbidden_buftypes) do
+					if vim.bo[buf].buftype == buftype then
+						return false
+					end
+				end
+
+				return true
+			end,
 		},
 	},
 }
