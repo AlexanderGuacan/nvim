@@ -3,14 +3,8 @@ return {
 	dependencies = { "rafamadriz/friendly-snippets" },
 	version = "1.*",
 	opts = {
-		-- 'default' (recommended) for mappings similar to built-in completions (C-y to accept)
-		-- 'super-tab' for mappings similar to vscode (tab to accept)
-		-- 'enter' for enter to accept
-		-- 'none' for no mappings
 		keymap = {
 			preset = "super-tab",
-			["<C-u>"] = { "scroll_signature_up", "fallback" },
-			["<C-d>"] = { "scroll_signature_down", "fallback" },
 		},
 
 		appearance = { nerd_font_variant = "mono" },

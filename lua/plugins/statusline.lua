@@ -10,17 +10,24 @@ return {
 				left = "",
 				right = "",
 			},
+			section_separators = {
+				right = "",
+				left = "",
+			},
 		},
 		sections = {
-			lualine_b = {
-				"branch",
-			},
+			lualine_b = {},
 			lualine_c = {
+				{
+					"branch",
+					icon = "",
+				},
+				"diagnostics",
 				{ "filename", path = 1 },
 			},
 			lualine_x = {
-				"diagnostics",
-				"lsp_status",
+				"encoding",
+				"fileformat",
 				"filetype",
 			},
 			lualine_y = {},

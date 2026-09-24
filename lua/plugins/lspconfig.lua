@@ -17,7 +17,6 @@ return {
 			"html",
 			"lua_ls",
 			"neocmake",
-			"pyright",
 			"tailwindcss",
 			"ts_ls",
 		},

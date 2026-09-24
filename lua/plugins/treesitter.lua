@@ -12,7 +12,6 @@ return {
 			"json",
 			"jsx",
 			"lua",
-			"python",
 			"tsx",
 			"typescript",
 			"javascript",

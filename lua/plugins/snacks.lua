@@ -2,10 +2,19 @@ local picker = {
 	enabled = true,
 	sources = {
 		explorer = {
+			auto_close = true,
 			layout = {
 				layout = {
-					position = "right",
+					position = "float",
+					border = "rounded",
+					width = 0.5,
+					height = 0.8,
 				},
+			},
+		},
+		buffers = {
+			layout = {
+				preset = "vscode",
 			},
 		},
 	},
@@ -18,9 +27,6 @@ local notifier = {
 
 local statuscolumn = {
 	enabled = true,
-	folds = {
-		open = true,
-	},
 }
 
 return {
@@ -63,20 +69,6 @@ return {
 				Snacks.picker.qflist()
 			end,
 			desc = "Quickfix list",
-		},
-		{
-			"<leader>/",
-			function()
-				Snacks.picker.grep()
-			end,
-			desc = "Grep",
-		},
-		{
-			"<leader>?",
-			function()
-				Snacks.picker.grep()
-			end,
-			desc = "Grep",
 		},
 
 		-- Search
@@ -139,11 +131,11 @@ return {
 			desc = "Config Files",
 		},
 		{
-			"<leader>fb",
+			"<leader>fg",
 			function()
-				Snacks.picker.buffers()
+				Snacks.picker.grep()
 			end,
-			desc = "Buffers",
+			desc = "Grep",
 		},
 
 		-- LSP
@@ -222,11 +214,25 @@ return {
 
 		-- Others
 		{
+			"<leader>bb",
+			function()
+				Snacks.picker.buffers()
+			end,
+			desc = "Buffers",
+		},
+		{
 			"<leader>bd",
 			function()
 				Snacks.bufdelete()
 			end,
 			desc = "Delete Buffer",
+		},
+		{
+			"<leader>bD",
+			function()
+				Snacks.bufdelete.other()
+			end,
+			desc = "Delete other Buffers",
 		},
 		{
 			"q:",
