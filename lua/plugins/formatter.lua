@@ -13,6 +13,7 @@ return {
 			javascriptreact = { "prettier" },
 			json = { "prettier", "jq", stop_after_first = true },
 			lua = { "stylua" },
+			markdown = { "prettier" },
 			typescript = { "prettier" },
 			typescriptreact = { "prettier" },
 		},

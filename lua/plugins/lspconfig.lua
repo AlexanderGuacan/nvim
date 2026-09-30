@@ -16,6 +16,7 @@ return {
 			"eslint",
 			"html",
 			"lua_ls",
+			"marksman",
 			"neocmake",
 			"tailwindcss",
 			"ts_ls",
