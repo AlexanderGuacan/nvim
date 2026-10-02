@@ -27,7 +27,7 @@ Homebrew is used to install Neovim and the external tools required by the config
 
 Follow the official installation instructions:
 
-https://brew.sh/
+[Homebrew](https://brew.sh/)
 
 On Linux/WSL:
 
