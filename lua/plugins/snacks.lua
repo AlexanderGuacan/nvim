@@ -5,10 +5,7 @@ local picker = {
 			auto_close = true,
 			layout = {
 				layout = {
-					position = "float",
-					border = "rounded",
-					width = 0.5,
-					height = 0.8,
+					position = "right",
 				},
 			},
 		},
