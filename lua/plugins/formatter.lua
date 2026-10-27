@@ -18,8 +18,8 @@ return {
 			typescriptreact = { "prettier" },
 		},
 		format_on_save = {
-			timeout_ms = 500,
-			lsp_format = "fallback",
+			timeout_ms = 3000,
+			lsp_format = true,
 		},
 	},
 	init = function()
