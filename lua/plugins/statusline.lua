@@ -5,6 +5,7 @@ return {
 	},
 	opts = {
 		options = {
+			theme = "gruvbox_dark",
 			globalstatus = true,
 			component_separators = {
 				left = "",
